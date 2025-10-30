@@ -28,16 +28,16 @@ portas 80, 22 e 443
 
 3. Instale o Apache, comandos:
 
-    curl ifconfig.me
-    cat /etc/system-release
-    sudo dnf update -y
-    sudo dnf install -y httpd php php-mysqli mariadb105
-    clear
-    sudo systemctl start httpd
-    sudo systemctl enable httpd
-    sudo usermod -a -G apache ec2-user
-    exit
-    groups
+        curl ifconfig.me
+        cat /etc/system-release
+        sudo dnf update -y
+        sudo dnf install -y httpd php php-mysqli mariadb105
+        clear
+        sudo systemctl start httpd
+        sudo systemctl enable httpd
+        sudo usermod -a -G apache ec2-user
+        exit
+        groups
 
 Aqui php e o servidor já está instalado  e o apache será exibidos após executar o último comando.
 
