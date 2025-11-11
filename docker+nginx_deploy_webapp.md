@@ -56,6 +56,9 @@ após isso configure o roteamento do IP para o dominio com roteamento TIPO A
     sudo pip install certbot-nginx
     sudo certbot certonly --standalone -d seu-dominio.com -d www.seu-dominio.com
 
+Agora faça o schedule da renovação (todo dia à 1 da manhã):
+
     sudo crontab -e
 
-0 1 * * * docker stop rtsystem-web-1 && /usr/local/bin/certbot renew --quiet && docker start rtsystem-web-1
+    0 1 * * * docker stop appweb && /usr/local/bin/certbot renew --quiet && docker start appweb
+
